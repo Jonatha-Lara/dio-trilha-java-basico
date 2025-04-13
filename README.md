@@ -61,7 +61,7 @@ Toda Classe ou Interface Java, segundo sua convenção deve:
 - Por convensão o nome da variável deve ser toda em maíscula(UPPERCASE).
 - Quando duas palavas separdo por underline "_".
 
-[Loading... Imagem final int ESTADOS_BR = 27;]
+`final int ESTADOS_BR = 27;`
 
 - Não deve começar uma variavel com números.
 - Não deve ser com palavras reservadas.
@@ -70,14 +70,91 @@ Toda Classe ou Interface Java, segundo sua convenção deve:
 
 # Declaração de Métodos e Variáveis.
 
-#### Váriáveis
+### Começando a falar de Váriáveis
 - pode ser declarada sem iniciar valor, ou iniciada com algum valor.
 - Declaração simples de váriavel `TIPO_VARIAVEL nomeVariavel;` ou `TIPO_VARIAVEL nomeVariavel = "Valor da Váriavel"`
 - O operador '=' atribui valor a uma variável.
 - Há vários tipos de variáveis.
 - Ao final de cada declaração terminar com ';'.
 
-#### Métodos
+### Começando a falar de Métodos
+- TIPO_RETORNO + NomeDoMetodoNoInfinitivo + Parâmetros, deve estar entre parênteses, abre e fecha chaves {}.
+
+`int somar(int numeroUm, int numeroDois) { //bloco lógico, retorno}`
+
+- Pode receber tipos diferentes no parâmetros e retornar outro tipo.
+
+String formatCep(int cep) {
+        String cepStr = String.format("%08d", cep);
+
+        // Formata no padrão xx.xxx-xxx
+        return cepStr.substring(0, 2) + "." + cepStr.substring(2, 5) + "-" + cepStr.substring(5);
+    }`
+
+- para chamar o método: 
+
+formatCep(cep);
+
+### Criando um método em Java 
+- Objetivo: imprimir nome completo a partir do primeiro nome e sobrenome.
+
+//Imagem do método 
+
+# Identação
+
+WINDOWS/LINUX: `Shift + Alt + F`
+
+- Facilicita leitura do código.
+- Demonstra nível hierárquico do código.
+- Boa prática é não passar de no máximo 6 níveis hierárquicos, caso passe reveja o código.
+
+# Organizando o Projeto
+
+- organize em pacotes, subdiretórios (packages).
+
+🛒 Comercial: "com"
+💼 Organizações: "org"
+♻️ Open Source "org" ou "openSource"
+
+Ex:
+
+- uma empresa comercial, notificações, aplicação (main).
+
+`com.hypertech.notification.app`
+
+- um aluno, na escola dio, curso de Java, excessões.
+
+`edu.jonatha.dio.javabasico.exeptions`
+
+# Java Beans
+- Iniciativa conceitual da comunidade de como expressamos o código.
+
+#Tipos de Variáveis
+
+## Tipos Primitivos
+
+## Fracionado
+
+## Representação de letra ou textos
+
+## Constantes
+
+## Operadores
+
+### Operadores Aritméticos
+
+### Operadores Unários
+
+### Operadores Ternários
+
+### Operadores Relacionais
+
+### Operadores Lógicos
+
+# Métodos 
+
+
+
 
 
 [Loading...]

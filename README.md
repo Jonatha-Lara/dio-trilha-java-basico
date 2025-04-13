@@ -86,8 +86,6 @@ Toda Classe ou Interface Java, segundo sua convenção deve:
 
 `String formatCep(int cep) {
         String cepStr = String.format("%08d", cep);
-
-        // Formata no padrão xx.xxx-xxx
         return cepStr.substring(0, 2) + "." + cepStr.substring(2, 5) + "-" + cepStr.substring(5);
     }`
 

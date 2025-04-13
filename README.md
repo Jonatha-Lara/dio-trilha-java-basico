@@ -68,7 +68,7 @@ Toda Classe ou Interface Java, segundo sua convenção deve:
 - Nome dado deve ser único no escopo.
 - São permitidos apenas '$' e '_' para caracteres especiais.
 
-# Declaração de Métodos e Variáveis.
+# Declaração de Métodos e Variáveis
 
 ### Começando a falar de Váriáveis
 - pode ser declarada sem iniciar valor, ou iniciada com algum valor.
@@ -84,7 +84,7 @@ Toda Classe ou Interface Java, segundo sua convenção deve:
 
 - Pode receber tipos diferentes no parâmetros e retornar outro tipo.
 
-String formatCep(int cep) {
+`String formatCep(int cep) {
         String cepStr = String.format("%08d", cep);
 
         // Formata no padrão xx.xxx-xxx
